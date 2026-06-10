@@ -90,41 +90,22 @@ a    { text-decoration: none; color: inherit; }
 
 .card-overlay {
   position: absolute;
-  inset: 0;
-  background: rgba(232,54,93,0);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 10px;
+  background: linear-gradient(to top, rgba(45,27,46,.65), transparent);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background .3s ease;
+  align-items: flex-end;
 }
 .card-overlay span {
   color: var(--white);
-  font-size: .78rem;
+  font-size: .72rem;
   font-weight: 700;
-  background: rgba(192,24,74,.88);
-  padding: 6px 14px;
+  background: rgba(192,24,74,.85);
+  padding: 4px 10px;
   border-radius: 20px;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity .3s ease, transform .3s ease;
   letter-spacing: .3px;
-}
-/* Show overlay on hover (desktop) */
-.product-card:hover .card-overlay { background: rgba(232,54,93,.18); }
-.product-card:hover .card-overlay span { opacity: 1; transform: translateY(0); }
-
-/* Show overlay on touch (mobile) - active state */
-.product-card:active .card-overlay { background: rgba(232,54,93,.25); }
-.product-card:active .card-overlay span { opacity: 1; transform: translateY(0); }
-
-/* Always-visible subtle hint on mobile */
-@media(hover:none) {
-  .card-overlay span {
-    opacity: .75;
-    transform: translateY(0);
-    font-size: .72rem;
-    padding: 4px 10px;
-  }
 }
 
 .card-info { padding: 10px 12px 14px; }
