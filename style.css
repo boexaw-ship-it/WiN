@@ -144,13 +144,30 @@ a    { text-decoration: none; color: inherit; }
 .modal-close:hover { background: var(--pink); color: var(--white); }
 
 /* MODAL GALLERY */
-.modal-gallery { position: relative; background: var(--gray); }
+.modal-gallery { position: relative; }
 .modal-imgs { position: relative; width: 100%; aspect-ratio: 4/3; overflow: hidden; touch-action: pan-y; }
 .modal-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .35s ease; }
 .modal-img.active { opacity: 1; }
-.modal-dots { display: flex; justify-content: center; gap: 7px; padding: 8px; }
-.mdot { width: 8px; height: 8px; border-radius: 50%; background: var(--gray2); cursor: pointer; transition: background .3s, transform .3s; }
-.mdot.active { background: var(--pink); transform: scale(1.3); }
+
+/* Dots inside image - bottom center */
+.modal-dots-inner {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 10;
+}
+.mdot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: background .3s, transform .3s;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.mdot.active { background: var(--white); transform: scale(1.3); }
 
 /* MODAL INFO */
 .modal-info { padding: 16px 18px 22px; }
