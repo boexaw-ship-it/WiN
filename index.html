@@ -53,7 +53,7 @@
         </div>
       </div>
     </div>
-    <div class="slider-dots" id="sliderDots">
+    <div class="slider-dots">
       <span class="dot active" onclick="goToSlide(0)"></span>
       <span class="dot" onclick="goToSlide(1)"></span>
       <span class="dot" onclick="goToSlide(2)"></span>
@@ -65,291 +65,159 @@
     <h2 class="section-title" data-my="ကုန်ပစ္စည်းများ" data-en="Our Products">ကုန်ပစ္စည်းများ</h2>
     <div class="products-grid">
 
-      <!-- 1 ပုဇွန်ခြောက် -->
-      <div class="product-card">
-        <div class="product-gallery">
-          <div class="gallery-main">
-            <img src="images/products/puzun/p1.jpg" class="gallery-img active" alt="ပုဇွန်ခြောက်" />
-            <img src="images/products/puzun/p2.jpg" class="gallery-img" alt="ပုဇွန်ခြောက် 2" />
-            <img src="images/products/puzun/p3.jpg" class="gallery-img" alt="ပုဇွန်ခြောက် 3" />
-          </div>
-          <div class="gallery-thumbs">
-            <span class="thumb active" onclick="switchImg(this,0)">1</span>
-            <span class="thumb" onclick="switchImg(this,1)">2</span>
-            <span class="thumb" onclick="switchImg(this,2)">3</span>
-          </div>
+      <div class="product-card" onclick="openModal('puzun')">
+        <div class="card-img-wrap">
+          <img src="images/products/puzun/p1.jpg" alt="ပုဇွန်ခြောက်" onerror="this.src='images/placeholder.png'" />
         </div>
-        <div class="product-info">
-          <h3 class="product-name" data-my="ပုဇွန်ခြောက်" data-en="Dried Shrimp">ပုဇွန်ခြောက်</h3>
-          <table class="price-table">
-            <thead><tr><th data-my="အလေး" data-en="Weight">အလေး</th><th data-my="ဈေးနှုန်း" data-en="Price">ဈေးနှုန်း</th></tr></thead>
-            <tbody>
-              <tr><td data-my="၁၀ ကျပ်သား" data-en="10 Kyat-Tha">၁၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၅၀ ကျပ်သား" data-en="50 Kyat-Tha">၅၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၁ ပိဿာ" data-en="1 Peittha">၁ ပိဿာ</td><td class="price-val">— ကျပ်</td></tr>
-            </tbody>
-          </table>
-          <div class="order-links">
-            <p class="order-label" data-my="မှာယူရန် / ဆက်သွယ်ရန်" data-en="Order / Contact">မှာယူရန် / ဆက်သွယ်ရန်</p>
-            <div class="order-btns">
-              <a href="https://facebook.com/YOUR_PAGE" target="_blank" class="order-btn fb" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://m.me/YOUR_PAGE" target="_blank" class="order-btn messenger" title="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
-              <a href="https://tiktok.com/@YOUR_ACCOUNT" target="_blank" class="order-btn tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-              <a href="viber://chat?number=+959772259059" class="order-btn viber" title="Viber · 09772259059"><i class="fa-brands fa-viber"></i></a>
-              <a href="https://t.me/YOUR_TELEGRAM" target="_blank" class="order-btn telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-            </div>
-          </div>
+        <div class="card-info">
+          <h3 data-my="ပုဇွန်ခြောက်" data-en="Dried Shrimp">ပုဇွန်ခြောက်</h3>
+          <span class="card-tap" data-my="တို့ကြည့်ရန်" data-en="Tap to view">တို့ကြည့်ရန်</span>
         </div>
       </div>
 
-      <!-- 2 ငါးခြောက် -->
-      <div class="product-card">
-        <div class="product-gallery">
-          <div class="gallery-main">
-            <img src="images/products/ngar/p1.jpg" class="gallery-img active" alt="ငါးခြောက်" />
-            <img src="images/products/ngar/p2.jpg" class="gallery-img" alt="ငါးခြောက် 2" />
-            <img src="images/products/ngar/p3.jpg" class="gallery-img" alt="ငါးခြောက် 3" />
-          </div>
-          <div class="gallery-thumbs">
-            <span class="thumb active" onclick="switchImg(this,0)">1</span>
-            <span class="thumb" onclick="switchImg(this,1)">2</span>
-            <span class="thumb" onclick="switchImg(this,2)">3</span>
-          </div>
+      <div class="product-card" onclick="openModal('ngar')">
+        <div class="card-img-wrap">
+          <img src="images/products/ngar/p1.jpg" alt="ငါးခြောက်" onerror="this.src='images/placeholder.png'" />
         </div>
-        <div class="product-info">
-          <h3 class="product-name" data-my="ငါးခြောက်" data-en="Dried Fish">ငါးခြောက်</h3>
-          <table class="price-table">
-            <thead><tr><th data-my="အလေး" data-en="Weight">အလေး</th><th data-my="ဈေးနှုန်း" data-en="Price">ဈေးနှုန်း</th></tr></thead>
-            <tbody>
-              <tr><td data-my="၁၀ ကျပ်သား" data-en="10 Kyat-Tha">၁၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၅၀ ကျပ်သား" data-en="50 Kyat-Tha">၅၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၁ ပိဿာ" data-en="1 Peittha">၁ ပိဿာ</td><td class="price-val">— ကျပ်</td></tr>
-            </tbody>
-          </table>
-          <div class="order-links">
-            <p class="order-label" data-my="မှာယူရန် / ဆက်သွယ်ရန်" data-en="Order / Contact">မှာယူရန် / ဆက်သွယ်ရန်</p>
-            <div class="order-btns">
-              <a href="https://facebook.com/YOUR_PAGE" target="_blank" class="order-btn fb" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://m.me/YOUR_PAGE" target="_blank" class="order-btn messenger" title="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
-              <a href="https://tiktok.com/@YOUR_ACCOUNT" target="_blank" class="order-btn tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-              <a href="viber://chat?number=+959772259059" class="order-btn viber" title="Viber · 09772259059"><i class="fa-brands fa-viber"></i></a>
-              <a href="https://t.me/YOUR_TELEGRAM" target="_blank" class="order-btn telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-            </div>
-          </div>
+        <div class="card-info">
+          <h3 data-my="ငါးခြောက်" data-en="Dried Fish">ငါးခြောက်</h3>
+          <span class="card-tap" data-my="တို့ကြည့်ရန်" data-en="Tap to view">တို့ကြည့်ရန်</span>
         </div>
       </div>
 
-      <!-- 3 မျှင်ငပိ -->
-      <div class="product-card">
-        <div class="product-gallery">
-          <div class="gallery-main">
-            <img src="images/products/hmyin/p1.jpg" class="gallery-img active" alt="မျှင်ငပိ" />
-            <img src="images/products/hmyin/p2.jpg" class="gallery-img" alt="မျှင်ငပိ 2" />
-            <img src="images/products/hmyin/p3.jpg" class="gallery-img" alt="မျှင်ငပိ 3" />
-          </div>
-          <div class="gallery-thumbs">
-            <span class="thumb active" onclick="switchImg(this,0)">1</span>
-            <span class="thumb" onclick="switchImg(this,1)">2</span>
-            <span class="thumb" onclick="switchImg(this,2)">3</span>
-          </div>
+      <div class="product-card" onclick="openModal('hmyin')">
+        <div class="card-img-wrap">
+          <img src="images/products/hmyin/p1.jpg" alt="မျှင်ငပိ" onerror="this.src='images/placeholder.png'" />
         </div>
-        <div class="product-info">
-          <h3 class="product-name" data-my="မျှင်ငပိ" data-en="Ngapi String">မျှင်ငပိ</h3>
-          <table class="price-table">
-            <thead><tr><th data-my="အလေး" data-en="Weight">အလေး</th><th data-my="ဈေးနှုန်း" data-en="Price">ဈေးနှုန်း</th></tr></thead>
-            <tbody>
-              <tr><td data-my="၁၀ ကျပ်သား" data-en="10 Kyat-Tha">၁၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၅၀ ကျပ်သား" data-en="50 Kyat-Tha">၅၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၁ ပိဿာ" data-en="1 Peittha">၁ ပိဿာ</td><td class="price-val">— ကျပ်</td></tr>
-            </tbody>
-          </table>
-          <div class="order-links">
-            <p class="order-label" data-my="မှာယူရန် / ဆက်သွယ်ရန်" data-en="Order / Contact">မှာယူရန် / ဆက်သွယ်ရန်</p>
-            <div class="order-btns">
-              <a href="https://facebook.com/YOUR_PAGE" target="_blank" class="order-btn fb" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://m.me/YOUR_PAGE" target="_blank" class="order-btn messenger" title="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
-              <a href="https://tiktok.com/@YOUR_ACCOUNT" target="_blank" class="order-btn tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-              <a href="viber://chat?number=+959772259059" class="order-btn viber" title="Viber · 09772259059"><i class="fa-brands fa-viber"></i></a>
-              <a href="https://t.me/YOUR_TELEGRAM" target="_blank" class="order-btn telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-            </div>
-          </div>
+        <div class="card-info">
+          <h3 data-my="မျှင်ငပိ" data-en="Ngapi String">မျှင်ငပိ</h3>
+          <span class="card-tap" data-my="တို့ကြည့်ရန်" data-en="Tap to view">တို့ကြည့်ရန်</span>
         </div>
       </div>
 
-      <!-- 4 ငပိထောင်း -->
-      <div class="product-card">
-        <div class="product-gallery">
-          <div class="gallery-main">
-            <img src="images/products/ngapi/p1.jpg" class="gallery-img active" alt="ငပိထောင်း" />
-            <img src="images/products/ngapi/p2.jpg" class="gallery-img" alt="ငပိထောင်း 2" />
-            <img src="images/products/ngapi/p3.jpg" class="gallery-img" alt="ငပိထောင်း 3" />
-          </div>
-          <div class="gallery-thumbs">
-            <span class="thumb active" onclick="switchImg(this,0)">1</span>
-            <span class="thumb" onclick="switchImg(this,1)">2</span>
-            <span class="thumb" onclick="switchImg(this,2)">3</span>
-          </div>
+      <div class="product-card" onclick="openModal('ngapi')">
+        <div class="card-img-wrap">
+          <img src="images/products/ngapi/p1.jpg" alt="ငပိထောင်း" onerror="this.src='images/placeholder.png'" />
         </div>
-        <div class="product-info">
-          <h3 class="product-name" data-my="ငပိထောင်း" data-en="Ngapi Paste">ငပိထောင်း</h3>
-          <table class="price-table">
-            <thead><tr><th data-my="အလေး" data-en="Weight">အလေး</th><th data-my="ဈေးနှုန်း" data-en="Price">ဈေးနှုန်း</th></tr></thead>
-            <tbody>
-              <tr><td data-my="၁၀ ကျပ်သား" data-en="10 Kyat-Tha">၁၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၅၀ ကျပ်သား" data-en="50 Kyat-Tha">၅၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၁ ပိဿာ" data-en="1 Peittha">၁ ပိဿာ</td><td class="price-val">— ကျပ်</td></tr>
-            </tbody>
-          </table>
-          <div class="order-links">
-            <p class="order-label" data-my="မှာယူရန် / ဆက်သွယ်ရန်" data-en="Order / Contact">မှာယူရန် / ဆက်သွယ်ရန်</p>
-            <div class="order-btns">
-              <a href="https://facebook.com/YOUR_PAGE" target="_blank" class="order-btn fb" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://m.me/YOUR_PAGE" target="_blank" class="order-btn messenger" title="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
-              <a href="https://tiktok.com/@YOUR_ACCOUNT" target="_blank" class="order-btn tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-              <a href="viber://chat?number=+959772259059" class="order-btn viber" title="Viber · 09772259059"><i class="fa-brands fa-viber"></i></a>
-              <a href="https://t.me/YOUR_TELEGRAM" target="_blank" class="order-btn telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-            </div>
-          </div>
+        <div class="card-info">
+          <h3 data-my="ငပိထောင်း" data-en="Ngapi Paste">ငပိထောင်း</h3>
+          <span class="card-tap" data-my="တို့ကြည့်ရန်" data-en="Tap to view">တို့ကြည့်ရန်</span>
         </div>
       </div>
 
-      <!-- 5 သိဟိုစေ့ -->
-      <div class="product-card">
-        <div class="product-gallery">
-          <div class="gallery-main">
-            <img src="images/products/siho/p1.jpg" class="gallery-img active" alt="သိဟိုစေ့" />
-            <img src="images/products/siho/p2.jpg" class="gallery-img" alt="သိဟိုစေ့ 2" />
-            <img src="images/products/siho/p3.jpg" class="gallery-img" alt="သိဟိုစေ့ 3" />
-          </div>
-          <div class="gallery-thumbs">
-            <span class="thumb active" onclick="switchImg(this,0)">1</span>
-            <span class="thumb" onclick="switchImg(this,1)">2</span>
-            <span class="thumb" onclick="switchImg(this,2)">3</span>
-          </div>
+      <div class="product-card" onclick="openModal('siho')">
+        <div class="card-img-wrap">
+          <img src="images/products/siho/p1.jpg" alt="သိဟိုစေ့" onerror="this.src='images/placeholder.png'" />
         </div>
-        <div class="product-info">
-          <h3 class="product-name" data-my="သိဟိုစေ့" data-en="Siho Seeds">သိဟိုစေ့</h3>
-          <table class="price-table">
-            <thead><tr><th data-my="အလေး" data-en="Weight">အလေး</th><th data-my="ဈေးနှုန်း" data-en="Price">ဈေးနှုန်း</th></tr></thead>
-            <tbody>
-              <tr><td data-my="၁၀ ကျပ်သား" data-en="10 Kyat-Tha">၁၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၅၀ ကျပ်သား" data-en="50 Kyat-Tha">၅၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၁ ပိဿာ" data-en="1 Peittha">၁ ပိဿာ</td><td class="price-val">— ကျပ်</td></tr>
-            </tbody>
-          </table>
-          <div class="order-links">
-            <p class="order-label" data-my="မှာယူရန် / ဆက်သွယ်ရန်" data-en="Order / Contact">မှာယူရန် / ဆက်သွယ်ရန်</p>
-            <div class="order-btns">
-              <a href="https://facebook.com/YOUR_PAGE" target="_blank" class="order-btn fb" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://m.me/YOUR_PAGE" target="_blank" class="order-btn messenger" title="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
-              <a href="https://tiktok.com/@YOUR_ACCOUNT" target="_blank" class="order-btn tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-              <a href="viber://chat?number=+959772259059" class="order-btn viber" title="Viber · 09772259059"><i class="fa-brands fa-viber"></i></a>
-              <a href="https://t.me/YOUR_TELEGRAM" target="_blank" class="order-btn telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-            </div>
-          </div>
+        <div class="card-info">
+          <h3 data-my="သိဟိုစေ့" data-en="Siho Seeds">သိဟိုစေ့</h3>
+          <span class="card-tap" data-my="တို့ကြည့်ရန်" data-en="Tap to view">တို့ကြည့်ရန်</span>
         </div>
       </div>
 
-      <!-- 6 ရေခူ -->
-      <div class="product-card">
-        <div class="product-gallery">
-          <div class="gallery-main">
-            <img src="images/products/ayeku/p1.jpg" class="gallery-img active" alt="ရေခူ" />
-            <img src="images/products/ayeku/p2.jpg" class="gallery-img" alt="ရေခူ 2" />
-            <img src="images/products/ayeku/p3.jpg" class="gallery-img" alt="ရေခူ 3" />
-          </div>
-          <div class="gallery-thumbs">
-            <span class="thumb active" onclick="switchImg(this,0)">1</span>
-            <span class="thumb" onclick="switchImg(this,1)">2</span>
-            <span class="thumb" onclick="switchImg(this,2)">3</span>
-          </div>
+      <div class="product-card" onclick="openModal('ayeku')">
+        <div class="card-img-wrap">
+          <img src="images/products/ayeku/p1.jpg" alt="ရေခူ" onerror="this.src='images/placeholder.png'" />
         </div>
-        <div class="product-info">
-          <h3 class="product-name" data-my="ရေခူ" data-en="Seaweed">ရေခူ</h3>
-          <table class="price-table">
-            <thead><tr><th data-my="အလေး" data-en="Weight">အလေး</th><th data-my="ဈေးနှုန်း" data-en="Price">ဈေးနှုန်း</th></tr></thead>
-            <tbody>
-              <tr><td data-my="၁၀ ကျပ်သား" data-en="10 Kyat-Tha">၁၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၅၀ ကျပ်သား" data-en="50 Kyat-Tha">၅၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၁ ပိဿာ" data-en="1 Peittha">၁ ပိဿာ</td><td class="price-val">— ကျပ်</td></tr>
-            </tbody>
-          </table>
-          <div class="order-links">
-            <p class="order-label" data-my="မှာယူရန် / ဆက်သွယ်ရန်" data-en="Order / Contact">မှာယူရန် / ဆက်သွယ်ရန်</p>
-            <div class="order-btns">
-              <a href="https://facebook.com/YOUR_PAGE" target="_blank" class="order-btn fb" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://m.me/YOUR_PAGE" target="_blank" class="order-btn messenger" title="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
-              <a href="https://tiktok.com/@YOUR_ACCOUNT" target="_blank" class="order-btn tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-              <a href="viber://chat?number=+959772259059" class="order-btn viber" title="Viber · 09772259059"><i class="fa-brands fa-viber"></i></a>
-              <a href="https://t.me/YOUR_TELEGRAM" target="_blank" class="order-btn telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-            </div>
-          </div>
+        <div class="card-info">
+          <h3 data-my="ရေခူ" data-en="Seaweed">ရေခူ</h3>
+          <span class="card-tap" data-my="တို့ကြည့်ရန်" data-en="Tap to view">တို့ကြည့်ရန်</span>
         </div>
       </div>
 
-      <!-- 7 ဒူရင်းယို -->
-      <div class="product-card">
-        <div class="product-gallery">
-          <div class="gallery-main">
-            <img src="images/products/durian/p1.jpg" class="gallery-img active" alt="ဒူရင်းယို" />
-            <img src="images/products/durian/p2.jpg" class="gallery-img" alt="ဒူရင်းယို 2" />
-            <img src="images/products/durian/p3.jpg" class="gallery-img" alt="ဒူရင်းယို 3" />
-          </div>
-          <div class="gallery-thumbs">
-            <span class="thumb active" onclick="switchImg(this,0)">1</span>
-            <span class="thumb" onclick="switchImg(this,1)">2</span>
-            <span class="thumb" onclick="switchImg(this,2)">3</span>
-          </div>
+      <div class="product-card" onclick="openModal('durian')">
+        <div class="card-img-wrap">
+          <img src="images/products/durian/p1.jpg" alt="ဒူရင်းယို" onerror="this.src='images/placeholder.png'" />
         </div>
-        <div class="product-info">
-          <h3 class="product-name" data-my="ဒူရင်းယို" data-en="Durian Paste">ဒူရင်းယို</h3>
-          <table class="price-table">
-            <thead><tr><th data-my="အလေး" data-en="Weight">အလေး</th><th data-my="ဈေးနှုန်း" data-en="Price">ဈေးနှုန်း</th></tr></thead>
-            <tbody>
-              <tr><td data-my="၁၀ ကျပ်သား" data-en="10 Kyat-Tha">၁၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၅၀ ကျပ်သား" data-en="50 Kyat-Tha">၅၀ ကျပ်သား</td><td class="price-val">— ကျပ်</td></tr>
-              <tr><td data-my="၁ ပိဿာ" data-en="1 Peittha">၁ ပိဿာ</td><td class="price-val">— ကျပ်</td></tr>
-            </tbody>
-          </table>
-          <div class="order-links">
-            <p class="order-label" data-my="မှာယူရန် / ဆက်သွယ်ရန်" data-en="Order / Contact">မှာယူရန် / ဆက်သွယ်ရန်</p>
-            <div class="order-btns">
-              <a href="https://facebook.com/YOUR_PAGE" target="_blank" class="order-btn fb" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://m.me/YOUR_PAGE" target="_blank" class="order-btn messenger" title="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
-              <a href="https://tiktok.com/@YOUR_ACCOUNT" target="_blank" class="order-btn tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-              <a href="viber://chat?number=+959772259059" class="order-btn viber" title="Viber · 09772259059"><i class="fa-brands fa-viber"></i></a>
-              <a href="https://t.me/YOUR_TELEGRAM" target="_blank" class="order-btn telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-            </div>
-          </div>
+        <div class="card-info">
+          <h3 data-my="ဒူရင်းယို" data-en="Durian Paste">ဒူရင်းယို</h3>
+          <span class="card-tap" data-my="တို့ကြည့်ရန်" data-en="Tap to view">တို့ကြည့်ရန်</span>
         </div>
       </div>
 
     </div>
   </section>
 
+  <!-- PRODUCT MODAL -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal-box" id="modalBox" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+
+      <!-- Gallery -->
+      <div class="modal-gallery" id="modalGallery">
+        <div class="modal-imgs" id="modalImgs">
+          <img class="modal-img" id="mImg0" src="" alt="" />
+          <img class="modal-img" id="mImg1" src="" alt="" />
+          <img class="modal-img" id="mImg2" src="" alt="" />
+        </div>
+        <div class="modal-dots">
+          <span class="mdot active" onclick="modalGoTo(0)"></span>
+          <span class="mdot" onclick="modalGoTo(1)"></span>
+          <span class="mdot" onclick="modalGoTo(2)"></span>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="modal-info">
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th data-my="အလေး" data-en="Weight">အလေး</th>
+              <th data-my="ဈေးနှုန်း" data-en="Price">ဈေးနှုန်း</th>
+            </tr>
+          </thead>
+          <tbody id="modalPrices"></tbody>
+        </table>
+
+        <!-- Social Order -->
+        <div class="modal-order">
+          <p class="order-label" data-my="မှာယူရန် / ဆက်သွယ်ရန်" data-en="Order / Contact">မှာယူရန် / ဆက်သွယ်ရန်</p>
+          <div class="modal-socials">
+            <a href="https://facebook.com/YOUR_PAGE" target="_blank" class="msoc fb" title="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://m.me/YOUR_PAGE" target="_blank" class="msoc msg" title="Messenger">
+              <i class="fa-brands fa-facebook-messenger"></i>
+            </a>
+            <a href="https://tiktok.com/@YOUR_ACCOUNT" target="_blank" class="msoc tt" title="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="viber://chat?number=+959772259059" class="msoc vb" title="Viber">
+              <i class="fa-brands fa-viber"></i>
+            </a>
+            <a href="https://t.me/YOUR_TELEGRAM" target="_blank" class="msoc tg" title="Telegram">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- CONTACT SECTION -->
   <section class="contact-section">
     <h2 class="section-title" data-my="ဆက်သွယ်ရန်" data-en="Contact Us">ဆက်သွယ်ရန်</h2>
     <div class="contact-grid">
       <a href="https://facebook.com/YOUR_PAGE" target="_blank" class="contact-btn fb">
-        <i class="fa-brands fa-facebook"></i>
-        <span class="contact-label">Facebook</span>
+        <i class="fa-brands fa-facebook-f"></i>
+        <span>Facebook</span>
       </a>
       <a href="https://m.me/YOUR_PAGE" target="_blank" class="contact-btn messenger">
         <i class="fa-brands fa-facebook-messenger"></i>
-        <span class="contact-label">Messenger</span>
+        <span>Messenger</span>
       </a>
       <a href="https://tiktok.com/@YOUR_ACCOUNT" target="_blank" class="contact-btn tiktok">
         <i class="fa-brands fa-tiktok"></i>
-        <span class="contact-label">TikTok</span>
+        <span>TikTok</span>
       </a>
       <a href="viber://chat?number=+959772259059" class="contact-btn viber">
         <i class="fa-brands fa-viber"></i>
-        <span class="contact-label">Viber</span>
+        <span>Viber</span>
       </a>
       <a href="https://t.me/YOUR_TELEGRAM" target="_blank" class="contact-btn telegram">
         <i class="fa-brands fa-telegram"></i>
-        <span class="contact-label">Telegram</span>
+        <span>Telegram</span>
       </a>
     </div>
   </section>
@@ -365,8 +233,20 @@
   <footer class="footer">
     <img src="images/logo.webp" alt="Win" class="footer-logo" />
     <p class="footer-name">Win Myeik Food</p>
-    <p class="footer-since">Since 1997 · မြိတ်မြို့</p>
-    <p class="footer-phone">📞 09772259059</p>
+    <p class="footer-since">Since 1997</p>
+    <div class="footer-branches">
+      <div class="branch">
+        <p class="branch-city" data-my="📍 မြိတ်မြို့" data-en="📍 Myeik">📍 မြိတ်မြို့</p>
+        <p class="branch-addr" data-my="မြိတ်ထွက်ကုန် ဗဟိုဆိုင်" data-en="Myeik Seafood Main Store">မြိတ်ထွက်ကုန် ဗဟိုဆိုင်</p>
+        <p class="branch-phone">📞 09772259059</p>
+      </div>
+      <div class="branch-divider"></div>
+      <div class="branch">
+        <p class="branch-city" data-my="📍 ရန်ကုန်မြို့" data-en="📍 Yangon">📍 ရန်ကုန်မြို့</p>
+        <p class="branch-addr" data-my="၁၁(က)ကျန်စစ်သားလမ်း၊ ကြီးပွားရေးရပ်ကွက်၊ သင်္ကန်းကျွန်း" data-en="11(A) Kyansittha St, Kyipwayay Ward, Thanlyin">၁၁(က)ကျန်စစ်သားလမ်း၊ ကြီးပွားရေးရပ်ကွက်၊ သင်္ကန်းကျွန်း</p>
+        <p class="branch-phone">📞 09798683021 / 09772259059</p>
+      </div>
+    </div>
     <p class="footer-copy">© 2025 Win Myeik Food. All rights reserved.</p>
   </footer>
 
