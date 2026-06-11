@@ -2,7 +2,8 @@
   "name": "Win Myeik Food",
   "short_name": "Win မြိတ်",
   "description": "မြိတ်ထွက်ကုန် အစစ်အမှန် - Since 1997",
-  "start_url": "/",
+  "start_url": "/WiN/",
+  "scope": "/WiN/",
   "display": "standalone",
   "background_color": "#1a0f1b",
   "theme_color": "#e8365d",
@@ -25,13 +26,13 @@
     {
       "name": "ကုန်ပစ္စည်းများ",
       "short_name": "Products",
-      "url": "/#products",
+      "url": "/WiN/#products",
       "icons": [{ "src": "images/icons/icon-96.png", "sizes": "96x96" }]
     },
     {
       "name": "ဆက်သွယ်ရန်",
       "short_name": "Contact",
-      "url": "/#contact",
+      "url": "/WiN/#contact",
       "icons": [{ "src": "images/icons/icon-96.png", "sizes": "96x96" }]
     }
   ]
